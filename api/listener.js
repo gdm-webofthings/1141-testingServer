@@ -1,4 +1,4 @@
-const listener = (udpPort) => {
+const listener = () => {
   // Listen for incoming OSC messages.
   udpPort.on("message", function (oscMsg, timeTag, info) {
     console.log("An OSC message just arrived!", oscMsg);
