@@ -28,7 +28,7 @@ const solveClient = (client) => {
   sendMessage(100, client);
 };
 const checkLiveClient = (client) => {
-  sendMessage(999, "client-01");
+  sendMessage(999, client);
 };
 
 module.exports = {

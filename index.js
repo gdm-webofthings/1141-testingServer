@@ -10,6 +10,7 @@ const {
   activateClient,
   solveClient,
   checkLiveClient,
+  deactivateClient,
 } = require("./api/sendFunctions");
 require("dotenv").config();
 
@@ -27,11 +28,10 @@ listener();
 // change the defaultstate function below to whatever you like,
 // will run when you restart the server
 udpPort.on("ready", function () {
-  // activateClient("client-01");
   setInterval(() => {
     checkLiveClient("client-01");
-    console.log("Live state send");
-  }, 5000);
+    console.log("message send!");
+  }, 3000);
 });
 
 // Open the socket.
